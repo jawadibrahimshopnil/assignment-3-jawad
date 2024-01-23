@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hockey Club</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hockey Club</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'a3Black': '#131318',
+          },
+        },
+        fontFamily: {
+          'a3Manrope': ['Manrope', 'sans-serif'],
+        },
+      }
+    }
+  </script>
 </head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+<body class="font-a3Manrope">
+  <header class="container lg:max-w-[73rem] max-w-[21rem] mx-auto my-12 relative">
+    <div class="carousel w-full rounded-2xl lg:h-[34rem] min-h-[12.5rem]">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="images/1.png" class="w-full" />
+        <div class="absolute lg:left-8 lg:bottom-8 left-1/3 bottom-5">
+          <a href="#slide3" class="btn btn-circle bg-a3Black text-white">❮</a>
+          <a href="#slide2" class="btn btn-circle mx-3 bg-[#131318] text-white">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="images/4.png" class="w-full" />
+        <div class="absolute lg:left-8 lg:bottom-8 left-1/3 bottom-5">
+          <a href="#slide1" class="btn btn-circle bg-a3Black text-white">❮</a>
+          <a href="#slide3" class="btn btn-circle mx-3 bg-[#131318] text-white">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="images/banner3.jpg" class="w-full" />
+        <div class="absolute lg:left-8 lg:bottom-8 left-1/3 bottom-5">
+          <a href="#slide2" class="btn btn-circle bg-a3Black text-white">❮</a>
+          <a href="#slide1" class="btn btn-circle mx-3 bg-[#131318] text-white">❯</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-a3Black p-4 mt-4 lg:p-8 rounded-2xl max-w-[21rem] lg:max-w-[31rem] absolute lg:bottom-8 lg:right-8">
+      <h2 class="mb-4 text-white font-extrabold text-2xl">Meet all the heroes from the field</h2>
+      <p class="text-white/60">Discover the essence of our hockey club through its dedicated players and coaches who
+        shape victories on and off the field.</p>
+    </div>
+  </header>
+  <main class="container lg:max-w-[73rem] mx-auto">
+
+  </main>
+  <footer></footer>
 </body>
+
 </html>
