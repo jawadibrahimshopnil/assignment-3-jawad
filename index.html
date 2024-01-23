@@ -18,6 +18,7 @@
         extend: {
           colors: {
             'a3Black': '#131318',
+            'a3White60': 'rgba(255, 255, 255, 0.60)',
           },
         },
         fontFamily: {
@@ -53,16 +54,46 @@
         </div>
       </div>
     </div>
-    <div class="bg-a3Black p-4 mt-4 lg:p-8 rounded-2xl max-w-[21rem] lg:max-w-[31rem] absolute lg:bottom-8 lg:right-8">
+    <div class="bg-a3Black p-4 mt-4 lg:p-8 rounded-2xl max-w-[21rem] lg:max-w-[31rem] lg:absolute lg:bottom-8 lg:right-8">
       <h2 class="mb-4 text-white font-extrabold text-2xl">Meet all the heroes from the field</h2>
-      <p class="text-white/60">Discover the essence of our hockey club through its dedicated players and coaches who
+      <p class="text-a3White60">Discover the essence of our hockey club through its dedicated players and coaches who
         shape victories on and off the field.</p>
     </div>
   </header>
   <main class="container lg:max-w-[73rem] mx-auto">
 
   </main>
-  <footer></footer>
+  <footer class="footer p-10 bg-base-200 text-base-content text-base font-medium bg-a3Black place-content-evenly sm:grid-cols-2 sm:place-items-center lg:flex lg:items-start lg:px-[8.5rem] lg:py-[6.25rem] sm:p-10">
+    <aside class="text-a3White60 lg:max-w-[21.5rem] place-items-center sm:col-span-full">
+      <h2 class="text-white text-3xl font-extrabold mb-4">Get In Touch</h2>
+      <p class="lg:mb-6 mb-5 text-center">Explore more, stay connected. Navigate our footer for quick links, updates, and social connections. Your journey, our commitment.</p>
+      <div class="mb-4"><img class="inline" src="images/icons/mail.png"> hockeys@support.com</div>
+      <div><img class="inline" src="images/icons/mbl.png"> (+62) 123-321-543</div>
+    </aside>
+    <nav class="text-a3White60 leading-10 sm:place-items-center">
+      <header class="text-white text-lg font-bold mb-6 leading-normal">Company</header>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Leadership</a>
+      <a class="link link-hover">Careers</a>
+      <a class="link link-hover">News & Article</a>
+      <a class="link link-hover">Legal Notice</a>
+    </nav>
+    <nav class="text-a3White60 leading-10 sm:place-items-center">
+      <header class="text-white text-lg font-bold mb-6 leading-normal">Support</header>
+      <a class="link link-hover">Help Center</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket Support</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <nav class="text-a3White60 leading-10 sm:col-span-full sm:place-self-center sm:place-items-center">
+      <header class="text-white text-lg font-bold mb-6 leading-normal">Services</header>
+      <a class="link link-hover">Academy</a>
+      <a class="link link-hover">Group Lesson</a>
+      <a class="link link-hover">Private Lesson</a>
+      <a class="link link-hover">Hockeys for kids</a>
+      <a class="link link-hover">Hockeys for Adult</a>
+    </nav>
+  </footer>
 </body>
 
 </html>
