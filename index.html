@@ -19,6 +19,8 @@
           colors: {
             'a3Black': '#131318',
             'a3White60': 'rgba(255, 255, 255, 0.60)',
+            'a3PryRed': '#FF4240',
+
           },
         },
         fontFamily: {
@@ -30,7 +32,66 @@
 </head>
 
 <body class="font-a3Manrope">
-  <header class="container lg:max-w-[73rem] max-w-[21rem] mx-auto my-12 relative">
+
+  <!-- navbar section -->
+  <nav class="lg:max-w-[73rem] max-w-[21rem] mx-auto my-12">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li>
+              <a class="text-a3PryRed">Home</a>
+            </li>
+            <li>
+              <a>About</a>
+            </li>
+            <li>
+              <a>Pages</a>
+            </li>
+            <li>
+              <a>Blog</a>
+            </li>
+            <li>
+              <a>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost lg:text-4xl text-2xl font-extrabold">Hockey<span class="text-a3PryRed">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <a class="text-a3PryRed">Home</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Pages</a>
+          </li>
+          <li>
+            <a>Blog</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <img src="images/icons/search.png" class="mx-2 hidden lg:inline">
+        <a class="btn bg-a3PryRed text-white px-6 py-4">Get Ticket</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header section  -->
+  <header class="container lg:max-w-[73rem] max-w-[21rem] mx-auto mb-12 relative">
     <div class="carousel w-full rounded-2xl lg:h-[34rem] min-h-[12.5rem]">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="images/1.png" class="w-full" />
@@ -54,7 +115,8 @@
         </div>
       </div>
     </div>
-    <div class="bg-a3Black p-4 mt-4 lg:p-8 rounded-2xl max-w-[21rem] lg:max-w-[31rem] lg:absolute lg:bottom-8 lg:right-8">
+    <div
+      class="bg-a3Black p-4 mt-4 lg:p-8 rounded-2xl max-w-[21rem] lg:max-w-[31rem] lg:absolute lg:bottom-8 lg:right-8">
       <h2 class="mb-4 text-white font-extrabold text-2xl">Meet all the heroes from the field</h2>
       <p class="text-a3White60">Discover the essence of our hockey club through its dedicated players and coaches who
         shape victories on and off the field.</p>
@@ -63,14 +125,16 @@
   <main class="container lg:max-w-[73rem] mx-auto">
 
   </main>
-  <footer class="footer p-10 bg-base-200 text-base-content text-base font-medium bg-a3Black place-content-evenly sm:grid-cols-2 sm:place-items-center lg:flex lg:items-start lg:px-[8.5rem] lg:py-[6.25rem] sm:p-10">
-    <aside class="text-a3White60 lg:max-w-[21.5rem] place-items-center sm:col-span-full">
+  <footer
+    class="footer p-10 bg-base-200 text-base-content text-base font-medium bg-a3Black place-content-evenly grid-cols-2 sm:place-items-center lg:flex lg:items-start lg:px-[8.5rem] lg:py-[6.25rem] sm:p-10">
+    <aside class="text-a3White60 lg:max-w-[21.5rem] place-items-center col-span-full">
       <h2 class="text-white text-3xl font-extrabold mb-4">Get In Touch</h2>
-      <p class="lg:mb-6 mb-5 text-center">Explore more, stay connected. Navigate our footer for quick links, updates, and social connections. Your journey, our commitment.</p>
+      <p class="lg:mb-6 mb-5 text-center">Explore more, stay connected. Navigate our footer for quick links, updates,
+        and social connections. Your journey, our commitment.</p>
       <div class="mb-4"><img class="inline" src="images/icons/mail.png"> hockeys@support.com</div>
       <div><img class="inline" src="images/icons/mbl.png"> (+62) 123-321-543</div>
     </aside>
-    <nav class="text-a3White60 leading-10 sm:place-items-center">
+    <nav class="text-a3White60 leading-10 place-items-center">
       <header class="text-white text-lg font-bold mb-6 leading-normal">Company</header>
       <a class="link link-hover">About us</a>
       <a class="link link-hover">Leadership</a>
@@ -78,14 +142,14 @@
       <a class="link link-hover">News & Article</a>
       <a class="link link-hover">Legal Notice</a>
     </nav>
-    <nav class="text-a3White60 leading-10 sm:place-items-center">
+    <nav class="text-a3White60 leading-10 place-items-center">
       <header class="text-white text-lg font-bold mb-6 leading-normal">Support</header>
       <a class="link link-hover">Help Center</a>
       <a class="link link-hover">FAQ</a>
       <a class="link link-hover">Ticket Support</a>
       <a class="link link-hover">Contact Us</a>
     </nav>
-    <nav class="text-a3White60 leading-10 sm:col-span-full sm:place-self-center sm:place-items-center">
+    <nav class="text-a3White60 leading-10 col-span-full place-self-center place-items-center">
       <header class="text-white text-lg font-bold mb-6 leading-normal">Services</header>
       <a class="link link-hover">Academy</a>
       <a class="link link-hover">Group Lesson</a>
