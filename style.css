@@ -1,0 +1,51 @@
+.GTform form input,
+.GTform form textarea {
+    width: 100%;
+    border-radius: 12px;
+    background: rgba(19, 19, 24, 0.03);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.GTform form textarea {
+    min-height: 300px;
+}
+
+.GTform form label {
+    color: #131318;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.GTform form input[type=submit] {
+    padding: 15px 24px;
+    text-align: center;
+    border-radius: 12px;
+    background: #FF4240;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+
+    .nameAndEmail {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .nameAndEmail input {
+        min-width: 50%;
+    }
+
+    .nameAndEmail {
+        display: flex;
+    }
+
+    .nameAndEmail div {
+        width: 100%;
+    }
+}
